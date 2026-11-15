@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Técnico Analyzer · Download</title>
+<meta name="description" content="Ferramentas de campo para técnicos de instalação e manutenção: Wi-Fi, testes de rede, etiqueta do roteador e calculadora HFC.">
+<link rel="icon" href="logo.png">
+<style>
+  :root{
+    --bg:#f5f5f6; --card:#ffffff; --text:#17181b; --muted:#5d6068; --line:#e3e4e8;
+    --accent:#e3262f; --accent-text:#ffffff; --soft:#fdecec;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{ --bg:#141518; --card:#1e2024; --text:#f2f3f5; --muted:#a3a7b0; --line:#2c2f35; --soft:#2a1b1d; }
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--text);font:16px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+  main{max-width:560px;margin:0 auto;padding:28px 16px 40px}
+  .brand{display:flex;align-items:center;gap:14px}
+  .brand img{width:64px;height:64px;border-radius:16px}
+  h1{font-size:26px;margin:0}
+  .tag{color:var(--muted);margin:2px 0 0;font-size:14px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px;margin-top:16px}
+  .download{display:block;text-align:center;background:var(--accent);color:var(--accent-text);text-decoration:none;
+    font-weight:700;font-size:18px;padding:16px;border-radius:14px;margin-top:18px}
+  .download:active{opacity:.85}
+  .meta{color:var(--muted);font-size:13px;text-align:center;margin:8px 0 0}
+  h2{font-size:17px;margin:0 0 10px}
+  ol,ul{margin:0;padding-left:20px}
+  li{margin:6px 0}
+  .warn{background:var(--soft);border-color:transparent}
+  code{font-size:12px;word-break:break-all;color:var(--muted)}
+  footer{color:var(--muted);font-size:13px;text-align:center;margin-top:24px}
+</style>
+</head>
+<body>
+<main>
+  <div class="brand">
+    <img src="logo.png" alt="">
+    <div>
+      <h1>Técnico Analyzer</h1>
+      <p class="tag">Ferramentas de campo para técnicos de instalação e manutenção</p>
+    </div>
+  </div>
+
+  <a class="download" href="https://github.com/fbrendler/tecnico-analyzer-download/releases/latest/download/tecnico-analyzer.apk">Baixar para Android</a>
+  <p class="meta">Versão 0.40 · 31 MB · Android 11 ou mais recente</p>
+
+  <section class="card">
+    <h2>Como instalar</h2>
+    <ol>
+      <li>Toque em <b>Baixar para Android</b> e abra o arquivo baixado.</li>
+      <li>Se o Android pedir, permita <b>instalar apps desta fonte</b> (navegador ou gerenciador de arquivos).</li>
+      <li>Toque em <b>Instalar</b>. Nas próximas versões, é só baixar de novo e instalar por cima.</li>
+    </ol>
+  </section>
+
+  <section class="card warn">
+    <h2>Tinha uma versão de teste?</h2>
+    <p style="margin:0">Versões instaladas antes desta página (enviadas por cabo ou por arquivo) têm outra assinatura. Desinstale a antiga uma vez e instale esta.</p>
+  </section>
+
+  <section class="card">
+    <h2>O que o app faz</h2>
+    <ul>
+      <li><b>Etiqueta do roteador:</b> uma foto lê rede, senhas, IP e login; conecta ao Wi-Fi e abre a configuração já preenchida.</li>
+      <li><b>Wi-Fi:</b> espectro, canais e padrões suportados pelo aparelho (Wi-Fi 4 a 7), com o padrão em uso agora.</li>
+      <li><b>Testes:</b> velocidade, latência, ping, traceroute e portas.</li>
+      <li><b>Varredura:</b> dispositivos da rede local.</li>
+      <li><b>Calculadora HFC:</b> RG6/RG11, divisores e DCs, sem internet.</li>
+    </ul>
+  </section>
+
+  <section class="card">
+    <h2>Novidades da 0.40</h2>
+    <ul>
+      <li>Girar o aparelho não perde a tela aberta (roteador, HFC, etiqueta).</li>
+      <li>Padrão Wi-Fi da conexão atual marcado como “em uso agora”.</li>
+      <li>Atalho para conferir a ficha técnica do aparelho.</li>
+    </ul>
+  </section>
+
+  <section class="card">
+    <h2>Privacidade</h2>
+    <p style="margin:0">Leitura de etiquetas e QR Codes feita no próprio aparelho. Senhas não entram no relatório. Fotos de etiqueta ficam na galeria (álbum Técnico Analyzer) e são apagadas automaticamente após 10 dias.</p>
+  </section>
+
+  <footer>
+    by <b>BRENDLER™</b><br>
+    <code>SHA-256 do APK 0.40: 40dc253b07f65595f044c507b520bdcd579731ba4f1a01467e438e8fd51715cb</code>
+  </footer>
+</main>
+</body>
+</html>
