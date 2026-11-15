@@ -32,6 +32,11 @@
   .warn{background:var(--soft);border-color:transparent}
   code{font-size:12px;word-break:break-all;color:var(--muted)}
   footer{color:var(--muted);font-size:13px;text-align:center;margin-top:24px}
+  /* Galeria de telas: rolagem lateral, sem estourar a largura no celular */
+  .shots{display:flex;gap:10px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:6px}
+  .shots figure{margin:0;flex:0 0 46%;scroll-snap-align:start}
+  .shots img{width:100%;height:auto;border-radius:12px;border:1px solid var(--line);display:block}
+  .shots figcaption{font-size:12px;color:var(--muted);text-align:center;margin-top:4px}
 </style>
 </head>
 <body>
@@ -45,7 +50,19 @@
   </div>
 
   <a class="download" href="https://github.com/fbrendler/tecnico-analyzer-download/releases/latest/download/tecnico-analyzer.apk">Baixar para Android</a>
-  <p class="meta">Versão 0.41 · 29 MB · Android 11 ou mais recente</p>
+  <p class="meta">Versão 0.42 · 29 MB · Android 11 ou mais recente</p>
+
+  <section class="card">
+    <h2>Telas</h2>
+    <div class="shots">
+      <figure><img src="prints/inicio.png" alt="Tela Início" loading="lazy"><figcaption>Início</figcaption></figure>
+      <figure><img src="prints/wifi-espectro.png" alt="Espectro Wi-Fi" loading="lazy"><figcaption>Wi-Fi · espectro</figcaption></figure>
+      <figure><img src="prints/wifi-redes.png" alt="Redes Wi-Fi próximas" loading="lazy"><figcaption>Wi-Fi · redes</figcaption></figure>
+      <figure><img src="prints/testes.png" alt="Testes de rede" loading="lazy"><figcaption>Testes</figcaption></figure>
+      <figure><img src="prints/camera.png" alt="Câmera" loading="lazy"><figcaption>Câmera</figcaption></figure>
+      <figure><img src="prints/calculadora-hfc.png" alt="Calculadora HFC" loading="lazy"><figcaption>Calculadora HFC</figcaption></figure>
+    </div>
+  </section>
 
   <section class="card">
     <h2>Como instalar</h2>
@@ -75,7 +92,13 @@
   </section>
 
   <section class="card">
-    <h2>Novidades da 0.41</h2>
+    <h2>Novidades da 0.42</h2>
+    <ul>
+      <li>Wi-Fi: rádios de cada equipamento lado a lado (2,4 GHz | 5 GHz), com fontes maiores.</li>
+      <li>Fabricante pelo MAC: se a consulta falhar, o app tenta de novo.</li>
+      <li>Aba “Calculadora HFC” com o nome completo.</li>
+    </ul>
+    <h2 style="margin-top:14px">Na 0.41</h2>
     <ul>
       <li>Atualização automática: o app avisa quando há versão nova e instala ao tocar em Atualizar.</li>
       <li>Wi-Fi: cada rede com sua cor; modem e mesh aparecem separados, com fabricante e modelo.</li>
@@ -91,7 +114,7 @@
 
   <footer>
     by <b>BRENDLER™</b><br>
-    <code>SHA-256 do APK 0.41: 522d3673c75611f0baaea3c1cf891435c82c0d7027263dc81397aa8fc4a21167</code>
+    <code>SHA-256 do APK 0.42: 1e3d44374d195e187d538aed5d242a4482e19142c9e564fb06786796671e9201</code>
   </footer>
 </main>
 </body>
