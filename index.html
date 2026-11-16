@@ -50,7 +50,7 @@
   </div>
 
   <a class="download" href="https://github.com/fbrendler/tecnico-analyzer-download/releases/latest/download/tecnico-analyzer.apk">Baixar para Android</a>
-  <p class="meta">Versão 0.54 · 30 MB · Android 11 ou mais recente</p>
+  <p class="meta">Versão 0.55 · 30 MB · Android 11 ou mais recente</p>
 
   <section class="card">
     <h2>Telas</h2>
@@ -73,7 +73,7 @@
       <li>Toque em <b>Instalar</b>.</li>
       <li>Se o <b>Google Play Protect</b> avisar que o app não foi analisado, toque em <b>Enviar para verificação</b> (gratuito) ou, em <b>Mais detalhes</b>, instale sem verificar. O aviso aparece porque o app não vem da Play Store.</li>
     </ol>
-    <p style="margin:8px 0 0">A partir da 0.41 o próprio app avisa quando há versão nova: toque em <b>Atualizar</b> e, só na primeira vez, ative <b>Permitir desta fonte</b> para o Técnico Analyzer. Quem estiver na 0.53 (ou anterior) recebe o aviso da 0.54 ao abrir o app — ou use <b>Sobre › Verificar atualização</b>.</p>
+    <p style="margin:8px 0 0">A partir da 0.41 o próprio app avisa quando há versão nova: toque em <b>Atualizar</b> e, só na primeira vez, ative <b>Permitir desta fonte</b> para o Técnico Analyzer. Quem estiver na 0.54 (ou anterior) recebe o aviso da 0.55 ao abrir o app — ou use <b>Sobre › Verificar atualização</b>.</p>
   </section>
 
   <section class="card warn">
@@ -89,16 +89,21 @@
       <li><b>Testes:</b> velocidade (Brasil Banda Larga e servidor Claro dentro do app), latência, ping, Visual Trace (traceroute visual), portas TCP/UDP e gerador de tráfego.</li>
       <li><b>Varredura:</b> dispositivos da rede local e sinal Wi-Fi por cômodo.</li>
       <li><b>Calculadora HFC:</b> RG6/RG11, divisores e DCs, sem internet.</li>
+      <li><b>VoIP:</b> atalho para a consulta de número da ABR Telecom (operadora atual e portabilidade).</li>
       <li><b>Diagnóstico para o cliente:</b> QR code na tela Informações abre a ficha do aparelho dele no navegador.</li>
     </ul>
   </section>
 
   <section class="card">
-    <h2>Novidades da 0.54</h2>
+    <h2>Novidades da 0.55</h2>
+    <ul>
+      <li><b>Cartão VoIP no fim do menu:</b> atalho para a consulta pública de numeração da ABR Telecom.</li>
+      <li>Um único botão abre <b>consultanumero.abrtelecom.com.br</b>: digite o número e veja a operadora atual e a portabilidade.</li>
+    </ul>
+    <h2 style="margin-top:14px">Na 0.54</h2>
     <ul>
       <li><b>QR do diagnóstico do cliente</b> na tela Informações, entre a ficha do aparelho e o suporte a padrões Wi-Fi.</li>
-      <li>O cliente aponta a câmera e abre <b>tecnico-analyzer.pages.dev</b>, com a ficha do próprio aparelho — sem instalar nada.</li>
-      <li>QR gerado no celular (funciona sem internet), link tocável e <b>Compartilhar link</b>.</li>
+      <li>QR gerado no celular, link tocável e <b>Compartilhar link</b>.</li>
     </ul>
     <h2 style="margin-top:14px">Na 0.53</h2>
     <ul>
@@ -107,44 +112,28 @@
     </ul>
     <h2 style="margin-top:14px">Na 0.52</h2>
     <ul>
-      <li><b>Menu de ferramentas</b> na abertura: cartões para Informações, Wi-Fi, Testes, Varredura, Câmera e Calculadora HFC.</li>
+      <li><b>Menu de ferramentas</b> na abertura, com cartões por área.</li>
       <li><b>Barra inferior removida:</b> as telas internas voltam ao menu pelo cabeçalho e pelo botão Voltar do Android.</li>
       <li>Visual Trace (0.50) e correção do fechamento da aba Testes (0.51).</li>
     </ul>
     <h2 style="margin-top:14px">Na 0.49</h2>
     <ul>
       <li>RSSI na câmera (AR) em retrato: a tela segue a rotação do aparelho e a projeção considera o giro da câmera.</li>
-      <li>Botões do AR em duas linhas de dois e legenda de dBm acima do painel.</li>
     </ul>
     <h2 style="margin-top:14px">Na 0.48</h2>
     <ul>
       <li>Band steering em tela própria (Testes), com BSSID por banda, veredito colorido e teste guiado de caminhada.</li>
-      <li>Ajustes de Wi-Fi no cabeçalho das abas Início e Wi-Fi; filtros de banda em uma linha só.</li>
-    </ul>
-    <h2 style="margin-top:14px">Na 0.47</h2>
-    <ul>
-      <li>Speedtest CLI Android: Florianópolis-SC com três servidores — 16338, 21732 e 1201.</li>
-    </ul>
-    <h2 style="margin-top:14px">Na 0.46</h2>
-    <ul>
-      <li>Band steering: bandas 2,4 GHz e 5 GHz do mesmo SSID lado a lado, com a conectada marcada, o delta e um veredito.</li>
-      <li>Trocas de banda: histórico da sessão com horário e sinal de cada troca.</li>
-    </ul>
-    <h2 style="margin-top:14px">Na 0.45</h2>
-    <ul>
-      <li>Speedtest CLI Android: latência, download e upload contra o servidor Claro da cidade, dentro do app.</li>
-      <li>Brasil Banda Larga (medidor oficial EAQ/Anatel) dentro do app.</li>
     </ul>
   </section>
 
   <section class="card">
     <h2>Privacidade</h2>
-    <p style="margin:0">Leitura de etiquetas e QR Codes feita no próprio aparelho. Senhas não entram no relatório. Fotos de etiqueta ficam na galeria (álbum Técnico Analyzer) e são apagadas automaticamente após 10 dias. O QR do cliente só abre um endereço público no navegador dele.</p>
+    <p style="margin:0">Leitura de etiquetas e QR Codes feita no próprio aparelho. Senhas não entram no relatório. Fotos de etiqueta ficam na galeria (álbum Técnico Analyzer) e são apagadas automaticamente após 10 dias. O QR do cliente só abre um endereço público no navegador dele; a consulta de número acontece no site da ABR Telecom.</p>
   </section>
 
   <footer>
     by <b>BRENDLER™</b><br>
-    <code>SHA-256 do APK 0.54: 7a1fbc51285a43ecaeaa78279be9bde89d0f57e83c41d70bcf9c88128813b632</code>
+    <code>SHA-256 do APK 0.55: bfa6c9640152001d3f3e6cdd72de83b4aaa0ce9407f3efcde2e3c47ad63ec7e5</code>
   </footer>
 </main>
 </body>
