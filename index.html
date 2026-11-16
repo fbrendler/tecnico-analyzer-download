@@ -50,7 +50,7 @@
   </div>
 
   <a class="download" href="https://github.com/fbrendler/tecnico-analyzer-download/releases/latest/download/tecnico-analyzer.apk">Baixar para Android</a>
-  <p class="meta">Versão 0.53 · 30 MB · Android 11 ou mais recente</p>
+  <p class="meta">Versão 0.54 · 30 MB · Android 11 ou mais recente</p>
 
   <section class="card">
     <h2>Telas</h2>
@@ -73,7 +73,7 @@
       <li>Toque em <b>Instalar</b>.</li>
       <li>Se o <b>Google Play Protect</b> avisar que o app não foi analisado, toque em <b>Enviar para verificação</b> (gratuito) ou, em <b>Mais detalhes</b>, instale sem verificar. O aviso aparece porque o app não vem da Play Store.</li>
     </ol>
-    <p style="margin:8px 0 0">A partir da 0.41 o próprio app avisa quando há versão nova: toque em <b>Atualizar</b> e, só na primeira vez, ative <b>Permitir desta fonte</b> para o Técnico Analyzer. Quem estiver na 0.52 (ou anterior) recebe o aviso da 0.53 ao abrir o app — ou use <b>Sobre › Verificar atualização</b>.</p>
+    <p style="margin:8px 0 0">A partir da 0.41 o próprio app avisa quando há versão nova: toque em <b>Atualizar</b> e, só na primeira vez, ative <b>Permitir desta fonte</b> para o Técnico Analyzer. Quem estiver na 0.53 (ou anterior) recebe o aviso da 0.54 ao abrir o app — ou use <b>Sobre › Verificar atualização</b>.</p>
   </section>
 
   <section class="card warn">
@@ -89,20 +89,26 @@
       <li><b>Testes:</b> velocidade (Brasil Banda Larga e servidor Claro dentro do app), latência, ping, Visual Trace (traceroute visual), portas TCP/UDP e gerador de tráfego.</li>
       <li><b>Varredura:</b> dispositivos da rede local e sinal Wi-Fi por cômodo.</li>
       <li><b>Calculadora HFC:</b> RG6/RG11, divisores e DCs, sem internet.</li>
+      <li><b>Diagnóstico para o cliente:</b> QR code na tela Informações abre a ficha do aparelho dele no navegador.</li>
     </ul>
   </section>
 
   <section class="card">
-    <h2>Novidades da 0.53</h2>
+    <h2>Novidades da 0.54</h2>
     <ul>
-      <li><b>Cartões do menu sem corte:</b> o texto de apoio aparecia cortado na base em telas de densidade alta; o cartão agora cresce conforme o conteúdo.</li>
-      <li>Título e texto de apoio com limite de linhas e reticências; ícone e seta ajustados para manter o alinhamento.</li>
+      <li><b>QR do diagnóstico do cliente</b> na tela Informações, entre a ficha do aparelho e o suporte a padrões Wi-Fi.</li>
+      <li>O cliente aponta a câmera e abre <b>tecnico-analyzer.pages.dev</b>, com a ficha do próprio aparelho — sem instalar nada.</li>
+      <li>QR gerado no celular (funciona sem internet), link tocável e <b>Compartilhar link</b>.</li>
+    </ul>
+    <h2 style="margin-top:14px">Na 0.53</h2>
+    <ul>
+      <li>Cartões do menu sem corte: o texto de apoio aparecia cortado na base em telas de densidade alta.</li>
+      <li>Título e texto de apoio com limite de linhas e reticências.</li>
     </ul>
     <h2 style="margin-top:14px">Na 0.52</h2>
     <ul>
       <li><b>Menu de ferramentas</b> na abertura: cartões para Informações, Wi-Fi, Testes, Varredura, Câmera e Calculadora HFC.</li>
       <li><b>Barra inferior removida:</b> as telas internas voltam ao menu pelo cabeçalho e pelo botão Voltar do Android.</li>
-      <li>Em telas largas o menu mostra duas ou três colunas; no celular, uma coluna.</li>
       <li>Visual Trace (0.50) e correção do fechamento da aba Testes (0.51).</li>
     </ul>
     <h2 style="margin-top:14px">Na 0.49</h2>
@@ -123,30 +129,22 @@
     <ul>
       <li>Band steering: bandas 2,4 GHz e 5 GHz do mesmo SSID lado a lado, com a conectada marcada, o delta e um veredito.</li>
       <li>Trocas de banda: histórico da sessão com horário e sinal de cada troca.</li>
-      <li>Celular: botões e fontes ajustados para três ações caberem na mesma linha.</li>
     </ul>
     <h2 style="margin-top:14px">Na 0.45</h2>
     <ul>
       <li>Speedtest CLI Android: latência, download e upload contra o servidor Claro da cidade, dentro do app.</li>
       <li>Brasil Banda Larga (medidor oficial EAQ/Anatel) dentro do app.</li>
-      <li>Portas TCP/UDP em paralelo e gerador de tráfego por porta.</li>
-      <li>Sinal por cômodo e RSSI na câmera (AR), na aba Varredura.</li>
-    </ul>
-    <h2 style="margin-top:14px">Na 0.43</h2>
-    <ul>
-      <li>Latência de Rede: escolha IPv4 ou IPv6 e veja o IP medido de cada destino.</li>
-      <li>PING -t: ping contínuo até tocar em Parar, com perda e tempos mín/méd/máx.</li>
     </ul>
   </section>
 
   <section class="card">
     <h2>Privacidade</h2>
-    <p style="margin:0">Leitura de etiquetas e QR Codes feita no próprio aparelho. Senhas não entram no relatório. Fotos de etiqueta ficam na galeria (álbum Técnico Analyzer) e são apagadas automaticamente após 10 dias.</p>
+    <p style="margin:0">Leitura de etiquetas e QR Codes feita no próprio aparelho. Senhas não entram no relatório. Fotos de etiqueta ficam na galeria (álbum Técnico Analyzer) e são apagadas automaticamente após 10 dias. O QR do cliente só abre um endereço público no navegador dele.</p>
   </section>
 
   <footer>
     by <b>BRENDLER™</b><br>
-    <code>SHA-256 do APK 0.53: 2cd2959621221677b67f40e1dd4a12ca5dcef9d9d3767445c98caff8babaa6d3</code>
+    <code>SHA-256 do APK 0.54: 7a1fbc51285a43ecaeaa78279be9bde89d0f57e83c41d70bcf9c88128813b632</code>
   </footer>
 </main>
 </body>
