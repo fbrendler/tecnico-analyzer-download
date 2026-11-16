@@ -11,6 +11,8 @@ Ferramentas de campo para técnicos de instalação e manutenção (Android 11+)
 | **Testes** | **Câmera** | **Calculadora HFC** |
 | <img src="prints/testes.png" width="240"> | <img src="prints/camera.png" width="240"> | <img src="prints/calculadora-hfc.png" width="240"> |
 
+**Band steering:** <img src="prints/band-steering.png" width="240">
+
 Este repositório contém só os arquivos publicados (APK nas [Releases](https://github.com/fbrendler/tecnico-analyzer-download/releases) e a página de download). O código-fonte é privado.
 
 by BRENDLER™
