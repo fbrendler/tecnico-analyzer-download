@@ -3,8 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light dark">
 <title>Técnico Analyzer · Download</title>
-<meta name="description" content="Ferramentas de campo para técnicos de instalação e manutenção: Wi-Fi, testes de rede, etiqueta do roteador e calculadora HFC.">
+<meta name="description" content="Ferramentas de campo para técnicos de instalação e manutenção: Wi-Fi, testes de rede, etiqueta do roteador, calculadoras HFC e G-PON e consulta VoIP.">
 <link rel="icon" href="logo.png">
 <style>
   :root{
@@ -31,6 +32,7 @@
   li{margin:6px 0}
   .warn{background:var(--soft);border-color:transparent}
   code{font-size:12px;word-break:break-all;color:var(--muted)}
+  .url{overflow-wrap:anywhere}
   footer{color:var(--muted);font-size:13px;text-align:center;margin-top:24px}
   /* Galeria de telas: rolagem lateral, sem estourar a largura no celular */
   .shots{display:flex;gap:10px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:6px}
@@ -50,7 +52,7 @@
   </div>
 
   <a class="download" href="https://github.com/fbrendler/tecnico-analyzer-download/releases/latest/download/tecnico-analyzer.apk">Baixar para Android</a>
-  <p class="meta">Versão 0.56 · 30 MB · Android 11 ou mais recente</p>
+  <p class="meta">Versão 0.57 · 30 MB · Android 11 ou mais recente</p>
 
   <section class="card">
     <h2>Telas</h2>
@@ -73,7 +75,7 @@
       <li>Toque em <b>Instalar</b>.</li>
       <li>Se o <b>Google Play Protect</b> avisar que o app não foi analisado, toque em <b>Enviar para verificação</b> (gratuito) ou, em <b>Mais detalhes</b>, instale sem verificar. O aviso aparece porque o app não vem da Play Store.</li>
     </ol>
-    <p style="margin:8px 0 0">A partir da 0.41 o próprio app avisa quando há versão nova: toque em <b>Atualizar</b> e, só na primeira vez, ative <b>Permitir desta fonte</b> para o Técnico Analyzer. Quem estiver na 0.55 (ou anterior) recebe o aviso da 0.56 ao abrir o app — ou use <b>Sobre › Verificar atualização</b>.</p>
+    <p style="margin:8px 0 0">A partir da 0.41 o próprio app avisa quando há versão nova: toque em <b>Atualizar</b> e, só na primeira vez, ative <b>Permitir desta fonte</b> para o Técnico Analyzer. Quem estiver entre a 0.41 e a 0.56 recebe o aviso da 0.57 ao abrir o app — ou use <b>Sobre › Verificar atualização</b>.</p>
   </section>
 
   <section class="card warn">
@@ -95,7 +97,13 @@
   </section>
 
   <section class="card">
-    <h2>Novidades da 0.56</h2>
+    <h2>Novidades da 0.57</h2>
+    <ul>
+      <li><b>Wi-Fi:</b> o sinal (dBm) das redes próximas volta a atualizar sozinho. Antes, ao voltar para a aba, os valores ficavam parados até fechar e abrir o app.</li>
+      <li>Nova busca ao entrar na aba e a cada 35 s enquanto ela estiver aberta, sem perder a rolagem.</li>
+      <li>A rede conectada mostra o sinal ao vivo, atualizado a cada 2 s; leituras antigas mostram há quanto tempo foram feitas.</li>
+    </ul>
+    <h2 style="margin-top:14px">Na 0.56</h2>
     <ul>
       <li><b>Calculadoras:</b> o cartão do menu agora se chama Calculadoras e abre a escolha entre <b>HFC</b> e <b>G-PON</b>.</li>
       <li><b>Nova Calculadora G-PON</b> (NAP/DIO → ONT, 1490 nm): fibra, divisor 1:2, cordões, conectores e PTO, com a faixa estimada de RX na ONT.</li>
@@ -104,7 +112,7 @@
     <h2 style="margin-top:14px">Na 0.55</h2>
     <ul>
       <li><b>Cartão VoIP no fim do menu:</b> atalho para a consulta pública de numeração da ABR Telecom.</li>
-      <li>Um único botão abre <b>consultanumero.abrtelecom.com.br</b>: digite o número e veja a operadora atual e a portabilidade.</li>
+      <li>Um único botão abre <b class="url">consultanumero.abrtelecom.com.br</b>: digite o número e veja a operadora atual e a portabilidade.</li>
     </ul>
     <h2 style="margin-top:14px">Na 0.54</h2>
     <ul>
